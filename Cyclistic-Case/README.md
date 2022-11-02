@@ -3,7 +3,7 @@ Determine how annual members and casual rider use Cyclistic differently.
 
 ## Data Source
 * **Data Source:** Public data provided by Motivate International Inc.(Divvy bike share system across Chicago and Evanston) under this [license](https://ride.divvybikes.com/data-license-agreement).
-* [Download Cyclistc trip history data](https://divvy-tripdata.s3.amazonaws.com/index.html)
+* [Download Cyclistic trip history data](https://divvy-tripdata.s3.amazonaws.com/index.html)
 * The data has been processed to remove trips that are taken by staff as they service and inspect the system; and any trips that were below 60 seconds in length (potentially false starts or users trying to re-dock a bike to ensure it was secure)
 * Each trip is anonymized and includes:
     * Trip start day and time
@@ -33,7 +33,8 @@ Determine how annual members and casual rider use Cyclistic differently.
     - The `start_station_name`, `start_station_id`, `end_station_name`, `end_station_id` columns are found to be only sources of missing value using [this query](https://github.com/decorouz/DataAnalysis-Portfolio/blob/main/Cyclistic-Case/check_null.sql).
     - Using [this query](https://github.com/decorouz/DataAnalysis-Portfolio/blob/main/Cyclistic-Case/check_null.sql) `start_station_name` and `end_station_name` is found to account for `15.01%` and `16.06%` of the missing value respectively.
     - The electric bike type is found to have `31.33%` missing `start_station_name` values compared to the zero percent for other bike types using [this query](https://github.com/decorouz/DataAnalysis-Portfolio/blob/main/Cyclistic-Case/check_null.sql)
-    
+
+@Following the cleaning and merging the  data into one table, `5,094,974` rows were returned for proceeding to analysis. Checkout the query [here](https://github.com/decorouz/DataAnalysis-Portfolio/blob/main/Cyclistic-Case/clean_single_query.sql)
 
 
 ## Summary of analysis
