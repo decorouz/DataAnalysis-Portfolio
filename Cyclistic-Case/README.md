@@ -34,7 +34,12 @@ Determine how annual members and casual rider use Cyclistic differently.
     - Using [this query](https://github.com/decorouz/DataAnalysis-Portfolio/blob/main/Cyclistic-Case/check_null.sql) `start_station_name` and `end_station_name` is found to account for `15.01%` and `16.06%` of the missing value respectively.
     - The electric bike type is found to have `31.33%` missing `start_station_name` values compared to the zero percent for other bike types using [this query](https://github.com/decorouz/DataAnalysis-Portfolio/blob/main/Cyclistic-Case/check_null.sql)
 
-@Following the cleaning and merging the  data into one table, `5,094,974` rows were returned for proceeding to analysis. Checkout the query [here](https://github.com/decorouz/DataAnalysis-Portfolio/blob/main/Cyclistic-Case/clean_single_query.sql)
+**Missing Data Strategy:** The dataset contains `1,489,091` records with missing values. This amount to `16%` of the entire dataset. A [litewise deletion](https://humansofdata.atlan.com/2017/09/4-methods-missing-data/) strategy is adopted because we do still have sufficient data to perform the analysis. Also the variables that contains the missing values are not important in deriving insight per the business task under investigation.
+
+> Cleaning and merging of the data into one table is consolidated using this [query](https://github.com/decorouz/DataAnalysis-Portfolio/blob/main/Cyclistic-Case/clean_single_query.sql). `5,094,974` rows were returned for proceeding to analysis. 
+
+
+
 
 
 ## Summary of analysis
