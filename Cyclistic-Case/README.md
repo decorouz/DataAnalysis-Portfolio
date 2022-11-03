@@ -31,7 +31,7 @@ Determine how annual members and casual rider use Cyclistic differently.
 
 * Check for columns that contains NULL values with this [query](https://github.com/decorouz/DataAnalysis-Portfolio/blob/main/Cyclistic-Case/columns_null_check.sql). The dataset has no missing values for `ride_id`, `rideable_type`, `start_lat`, `start_lng`, `started_at`, `ended_at` but lack data in `start_station_name`, `start_station_id`, `end_station_name`, `end_station_id`,  `end_lat`, `end_lng`. -> Need to clean theses variables before proceeding with analysis.
 
-    ![image](Cyclistic-Case/viz/column_null_summary.png)
+    ![image](https://raw.githubusercontent.com/decorouz/DataAnalysis-Portfolio/main/Cyclistic-Case/viz/column_null_summary.png)
     - A total of `1,489,091` records contain missing/NULL values. [Query](https://github.com/decorouz/DataAnalysis-Portfolio/blob/main/Cyclistic-Case/columns_check.sql).  
     * Using [this query](https://github.com/decorouz/DataAnalysis-Portfolio/blob/main/Cyclistic-Case/check_null.sql) `start_station_name` and `end_station_name` are found to account for `15.01%` and `16.06%` of the missing value respectively.
     * The electric bike type is found to have `31.33%` missing `start_station_name` values compared to the zero percent for other bike types using [this query](https://github.com/decorouz/DataAnalysis-Portfolio/blob/main/Cyclistic-Case/check_null.sql).
